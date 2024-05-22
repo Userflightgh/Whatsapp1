@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Mensagem Automática</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Enviar Mensagens Automáticas no WhatsApp</h1>
+
+    <label for="numeroEnvio">Número de Telefone do Remetente:</label>
+    <input type="text" id="numeroEnvio" placeholder="Digite o número de telefone do remetente">
+
+    <label for="numeroRecebimento">Número de Telefone do Destinatário:</label>
+    <input type="text" id="numeroRecebimento" placeholder="Digite o número de telefone do destinatário">
+
+    <div id="mensagens-container">
+      <!-- Campos de mensagem dinamicamente inseridos aqui -->
+    </div>
+
+    <button onclick="adicionarCampoMensagem()">Adicionar Campo de Mensagem</button>
+    <button onclick="enviarMensagens()">Enviar Mensagens</button>
+  </div>
+
+</body>
+</html>
